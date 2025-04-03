@@ -5,8 +5,7 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "start": "node app.js",
-    "test": "npx playwright test"
+    "start": "node app.js & npx wait-on http://127.0.0.1:$PORT"
   },
   "keywords": [],
   "author": "",
@@ -18,6 +17,7 @@
   },
   "devDependencies": {
     "@playwright/test": "^1.25.1",
-    "playwright": "^1.25.1"
+    "playwright": "^1.25.1",
+    "wait-on": "^8.0.3"
   }
 }
